@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>تيموورك@isset($title) - {{ $title }} @endisset</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -39,5 +39,10 @@
 
             <!-- Livewire Script  -->
             @livewireScripts
+            <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
+            <script type="module">
+            var Turbolinks = require("turbolinks")
+            Turbolinks.start()
+            </script>
     </body>
 </html>
