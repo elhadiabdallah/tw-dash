@@ -12,7 +12,8 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link class="ml-4" :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    الرئيسية
                     </x-nav-link>
 
                     <x-nav-link :href="route('users')" :active="request()->routeIs('users')">
@@ -29,7 +30,7 @@
                         {{ __('الخدمات') }}
                     </x-nav-link>
 
-                    <x-nav-link :href="route('system')" :active="request()->routeIs('system')">
+                    <x-nav-link :href="route('system.country')" :active="request()->routeIs('system.country')">
                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
   <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
 </svg>

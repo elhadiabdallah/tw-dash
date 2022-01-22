@@ -8,14 +8,17 @@ class SubItem extends Component
 {
 
     public $uri;
+    public $active;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($uri = null)
+    public function __construct($uri = null, $active = null)
     {
         $this->uri = $uri;
+        $this->active = $active;
     }
 
     /**

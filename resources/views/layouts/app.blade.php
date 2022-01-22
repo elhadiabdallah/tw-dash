@@ -40,9 +40,12 @@
             <!-- Livewire Script  -->
             @livewireScripts
             <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
-            <script type="module">
-            var Turbolinks = require("turbolinks")
-            Turbolinks.start()
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+            window.addEventListener('swal', function(e){
+                Swal.fire(e.detail)
+            })
             </script>
+  <x-livewire-alert::scripts />
     </body>
 </html>
